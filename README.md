@@ -40,17 +40,19 @@ ___
 | 05 | Returns the instanced Order's Date property when given a string of "03/05/2021" | `newOrder.Date` | "03/05/2021" | ✅ |
 | 06 | Returns an empty list when no instances Order are created | `Order.GetAll()` | { } | ✅ |
 | 07 | Returns a list of all instances of Order when given Orders newOrderA and newOrderB | `Order.GetAll()` | { newOrderA, newOrderB } | ✅ |
-| 08 | Returns the instanced Order's Id property based on its position in the list of all instances of Order when given Orders newOrderA and newOrderB | `newOrderB.Id` | 2 | ❌ |
-| 09 | Returns the instanced Order when given Orders newOrderA and newOrderB | `Order.Find(2)` | newOrderB | ❌ |
-| 10 | Creates a new instance of Vendor named newVendor | `new Vendor()` | newVendor | ❌ |
-| 11 | Returns the instanced Vendor's Name property when given a string of "Brad's Butter Emporium" | `newVendor.Name` | "Brad's Butter Emporium" | ❌ |
-| 12 | Returns the instanced Vendor's Description property when given a string of "Typically buys a lot of bread to butter" | `newVendor.Description` | "Typically buys a lot of bread to butter" | ❌ |
-| 13 | Returns an empty list when no instances of Vendor are created | `Vendor.GetAll()` | { } | ❌ |
-| 14 | Returns a list of all instances of Vendor when given Vendors newVendorA and newVendorB | `Vendor.GetAll()` | { newVendorA, newVendorB } | ❌ |
-| 15 | Returns the instanced Vendor's Id property based on its position in the list of all instances of Vendor when given Vendors newVendorA and newVendorB | `newVendorB.Id` | 2 | ❌ |
-| 16 | Returns the instanced Vendor when given Vendors newVendorA and newVendorB | `Vendor.Find(2)` | newVendorB | ❌ |
-| 17 | Returns an empty list when no instances of Order are added to an instance of Vendor | `newVendor.Orders` | { } | ❌ |
-| 18 | Returns a list of instances of Order that are added to an instance of Vendor when given newOrderA and newOrderB | `newVendor.Orders` | { newOrderA, newOrderB } | ❌ |
+| 08 | Returns the first instanced Order's Id property | `newOrder.Id` | 1 | ❌ |
+| 09 | Returns the instanced Order's Id property based on its position in the list of all instances of Order when given Orders newOrderA and newOrderB | `newOrderB.Id` | 2 | ❌ |
+| 10 | Returns the instanced Order when given Orders newOrderA and newOrderB | `Order.Find(2)` | newOrderB | ❌ |
+| 11 | Creates a new instance of Vendor named newVendor | `new Vendor()` | newVendor | ❌ |
+| 12 | Returns the instanced Vendor's Name property when given a string of "Brad's Butter Emporium" | `newVendor.Name` | "Brad's Butter Emporium" | ❌ |
+| 13 | Returns the instanced Vendor's Description property when given a string of "Typically buys a lot of bread to butter" | `newVendor.Description` | "Typically buys a lot of bread to butter" | ❌ |
+| 14 | Returns an empty list when no instances of Vendor are created | `Vendor.GetAll()` | { } | ❌ |
+| 15 | Returns a list of all instances of Vendor when given Vendors newVendorA and newVendorB | `Vendor.GetAll()` | { newVendorA, newVendorB } | ❌ |
+| 16 | Returns the first instanced Vendor's Id property | `newVendor.Id` | 1 | ❌ |
+| 17 | Returns the instanced Vendor's Id property based on its position in the list of all instances of Vendor when given Vendors newVendorA and newVendorB | `newVendorB.Id` | 2 | ❌ |
+| 18 | Returns the instanced Vendor when given Vendors newVendorA and newVendorB | `Vendor.Find(2)` | newVendorB | ❌ |
+| 19 | Returns an empty list when no instances of Order are added to an instance of Vendor | `newVendor.Orders` | { } | ❌ |
+| 20 | Returns a list of instances of Order that are added to an instance of Vendor when given newOrderA and newOrderB | `newVendor.Orders` | { newOrderA, newOrderB } | ❌ |
 </details>
 
 
