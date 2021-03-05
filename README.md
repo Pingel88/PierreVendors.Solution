@@ -45,7 +45,7 @@ ___
 | 10 | Returns the instanced Order when given Orders newOrderA and newOrderB | `Order.Find(2)` | newOrderB | ✅ |
 | 11 | Creates a new instance of Vendor named newVendor | `new Vendor()` | newVendor | ✅ |
 | 12 | Returns the instanced Vendor's Name property when given a string of "Brad's Butter Emporium" | `newVendor.Name` | "Brad's Butter Emporium" | ✅ |
-| 13 | Returns the instanced Vendor's Description property when given a string of "Typically buys a lot of bread to butter" | `newVendor.Description` | "Typically buys a lot of bread to butter" | ❌ |
+| 13 | Returns the instanced Vendor's Description property when given a string of "Typically buys a lot of bread to butter" | `newVendor.Description` | "Typically buys a lot of bread to butter" | ✅ |
 | 14 | Returns an empty list when no instances of Vendor are created | `Vendor.GetAll()` | { } | ❌ |
 | 15 | Returns a list of all instances of Vendor when given Vendors newVendorA and newVendorB | `Vendor.GetAll()` | { newVendorA, newVendorB } | ❌ |
 | 16 | Returns the first instanced Vendor's Id property | `newVendor.Id` | 1 | ❌ |
