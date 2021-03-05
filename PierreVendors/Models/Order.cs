@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 namespace PierreVendors.Models
 {
   public class Order
@@ -13,6 +14,13 @@ namespace PierreVendors.Models
       Description = description;
       Price = price;
       Date = date;
+    }
+
+    public static List<Order> GetAll()
+    {
+      Order fakeOrder = new Order ("fail", "fail", 0, "fail");
+      List<Order> fail = new List<Order> { fakeOrder };
+      return fail;
     }
   }
 }
