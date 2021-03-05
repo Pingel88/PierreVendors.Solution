@@ -48,7 +48,7 @@ ___
 | 13 | Returns the instanced Vendor's Description property when given a string of "Typically buys a lot of bread to butter" | `newVendor.Description` | "Typically buys a lot of bread to butter" | ✅ |
 | 14 | Returns an empty list when no instances of Vendor are created | `Vendor.GetAll()` | { } | ✅ |
 | 15 | Returns a list of all instances of Vendor when given Vendors newVendorA and newVendorB | `Vendor.GetAll()` | { newVendorA, newVendorB } | ✅ |
-| 16 | Returns the first instanced Vendor's Id property | `newVendor.Id` | 1 | ❌ |
+| 16 | Returns the first instanced Vendor's Id property | `newVendor.Id` | 1 | ✅ |
 | 17 | Returns the instanced Vendor's Id property based on its position in the list of all instances of Vendor when given Vendors newVendorA and newVendorB | `newVendorB.Id` | 2 | ❌ |
 | 18 | Returns the instanced Vendor when given Vendors newVendorA and newVendorB | `Vendor.Find(2)` | newVendorB | ❌ |
 | 19 | Returns an empty list when no instances of Order are added to an instance of Vendor | `newVendor.Orders` | { } | ❌ |
