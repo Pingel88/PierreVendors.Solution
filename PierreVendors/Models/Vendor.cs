@@ -6,6 +6,7 @@ namespace PierreVendors.Models
   {
     public string Name { get; }
     public string Description { get; }
+    private static List<Vendor> _instances = new List<Vendor> {};
 
     public Vendor (string name, string description)
     {
@@ -15,9 +16,7 @@ namespace PierreVendors.Models
 
     public static List<Vendor> GetAll()
     {
-      Vendor fakeVendor = new Vendor ("fail", "fail");
-      List<Vendor> fail = new List<Vendor> { fakeVendor };
-      return fail;
+      return _instances;
     }
   }
 }
