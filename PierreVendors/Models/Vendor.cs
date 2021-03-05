@@ -2,6 +2,11 @@ namespace PierreVendors.Models
 {
   public class Vendor
   {
-    // properties, constructors, methods, etc. go here
+    public string Name { get; }
+
+    public Vendor (string name)
+    {
+      
+    }
   }
 }
