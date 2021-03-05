@@ -10,6 +10,7 @@ namespace PierreVendors.Models
     {
       Title = title;
       Description = description;
+      Price = price;
     }
   }
 }
