@@ -15,6 +15,7 @@ namespace PierreVendors.Models
       Description = description;
       Price = price;
       Date = date;
+      _instances.Add(this);
     }
 
     public static List<Order> GetAll()
