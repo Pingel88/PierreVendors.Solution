@@ -6,6 +6,7 @@ namespace PierreVendors.Models
   {
     public string Name { get; }
     public string Description { get; }
+    public int Id { get; }
     private static List<Vendor> _instances = new List<Vendor> {};
 
     public Vendor (string name, string description)
