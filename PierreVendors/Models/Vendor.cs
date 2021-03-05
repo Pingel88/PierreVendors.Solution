@@ -6,7 +6,7 @@ namespace PierreVendors.Models
 
     public Vendor (string name)
     {
-      
+      Name = name;
     }
   }
 }
