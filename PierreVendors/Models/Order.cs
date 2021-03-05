@@ -7,6 +7,7 @@ namespace PierreVendors.Models
     public string Description { get; }
     public int Price { get; }
     public string Date { get; }
+    private static List<Order> _instances = new List <Order> {};
 
     public Order (string title, string description, int price, string date)
     {
@@ -18,9 +19,7 @@ namespace PierreVendors.Models
 
     public static List<Order> GetAll()
     {
-      Order fakeOrder = new Order ("fail", "fail", 0, "fail");
-      List<Order> fail = new List<Order> { fakeOrder };
-      return fail;
+      return _instances;
     }
   }
 }
