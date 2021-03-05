@@ -27,8 +27,7 @@ namespace PierreVendors.Models
 
     public static Order Find(int searchId)
     {
-      Order fake = new Order("fail", "fail", 50, "fail");
-      return fake;
+      return _instances[searchId - 1];
     }
 
     public static void ClearAll()
