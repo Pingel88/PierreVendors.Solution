@@ -63,5 +63,14 @@ namespace PierreVendors.Tests
       int result = newVendor.Id;
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void GetId_ReturnsIdBasedOnPositionInList_Int()
+    {
+      Vendor newVendorA = new Vendor("Brad's Butter Emporium", "Typically buys a lot of bread to butter");
+      Vendor newVendorB = new Vendor("Sammy's Sandwiches", "Frequently purchases hoagie rolls");
+      int result = newVendorB.Id;
+      Assert.AreEqual(2, result);
+    }
   }
 }
