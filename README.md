@@ -36,7 +36,7 @@ ___
 | 01 | Creates a new instance of Order named newOrder| `new Order()` | newOrder | ✅ |
 | 02 | Returns the instanced Order's Title property when given a string of "Bread" | `newOrder.Title` | "Bread" | ✅ |
 | 03 | Returns the instanced Order's Description property when given a string of "10 loaves of bread" | `newOrder.Description` | "10 loaves of bread" | ✅ |
-| 04 | Returns the instanced Order's Price property when given an integer of 50 | `newOrder.Price` | 50 | ❌ |
+| 04 | Returns the instanced Order's Price property when given an integer of 50 | `newOrder.Price` | 50 | ✅ |
 | 05 | Returns the instanced Order's Date property when given a string of "03/05/2021" | `newOrder.Date` | "03/05/2021" | ❌ |
 | 06 | Returns an empty list when no instances Order are created | `Order.GetAll()` | { } | ❌ |
 | 07 | Returns a list of all instances of Order when given Orders newOrderA and newOrderB | `Order.GetAll()` | { newOrderA, newOrderB } | ❌ |
