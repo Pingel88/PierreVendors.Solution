@@ -12,5 +12,15 @@ namespace PierreVendors.Tests
       Order newOrder = new Order();
       Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
+
+    [TestMethod]
+    public void GetOrderTitle_ReturnsOrderTitle_String()
+    {
+      string title = "Bread";
+      Order newOrder = new Order();
+      string result = newOrder.Title;
+      Assert.AreEqual(title, result);
+    }
+
   }
 }
