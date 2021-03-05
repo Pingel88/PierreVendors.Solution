@@ -25,6 +25,12 @@ namespace PierreVendors.Models
       return _instances;
     }
 
+    public static Order Find(int searchId)
+    {
+      Order fake = new Order("fail", "fail", 50, "fail");
+      return fake;
+    }
+
     public static void ClearAll()
     {
       _instances.Clear();
