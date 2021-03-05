@@ -33,7 +33,7 @@ ___
 
 | # | Behavior | Input |  Output | Complete |
 | :------------- | :------------- | :------------- | :------------ | :-------------: |
-| 01 | Creates a new instance of Order named newOrder| `new Order()` | newOrder | ❌ |
+| 01 | Creates a new instance of Order named newOrder| `new Order()` | newOrder | ✅ |
 | 02 | Returns the instanced Order's Title property when given a string of "Bread" | `newOrder.Title` | "Bread" | ❌ |
 | 03 | Returns the instanced Order's Description property when given a string of "10 loaves of bread" | `newOrder.Description` | "10 loaves of bread" | ❌ |
 | 04 | Returns the instanced Order's Price property when given an integer of 50 | `newOrder.Price` | 50 | ❌ |
@@ -51,8 +51,6 @@ ___
 | 16 | Returns the instanced Vendor when given Vendors newVendorA and newVendorB | `Vendor.Find(2)` | newVendorB | ❌ |
 | 17 | Returns an empty list when no instances of Order are added to an instance of Vendor | `newVendor.Orders` | { } | ❌ |
 | 18 | Returns a list of instances of Order that are added to an instance of Vendor when given newOrderA and newOrderB | `newVendor.Orders` | { newOrderA, newOrderB } | ❌ |
-| | | | | ✅ |
-
 </details>
 
 
