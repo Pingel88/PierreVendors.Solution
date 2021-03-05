@@ -91,5 +91,13 @@ namespace PierreVendors.Tests
       Assert.AreEqual(2, result);
     }
 
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      Order newOrderA = new Order("Bread", "10 loaves of bread", 50, "03/05/2021");
+      Order newOrderB = new Order("Pastries", "20 pastries", 60, "03/05/2021");
+      Order result = Order.Find(2);
+      Assert.AreEqual(newOrderB, result);
+    }
   }
 }
