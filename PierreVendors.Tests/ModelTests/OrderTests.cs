@@ -1,17 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using PierreVendors.Models;
 
-namespace ProjectName.Tests
+namespace PierreVendors.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class OrderTests
   {
     [TestMethod]
-    public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
+    public void OrderConstructor_CreatesInstanceOfOrder_Order()
     {
-      // any necessary logic to prep for test; instantiating new classes, etc.
-      Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-      // Assert.AreEqual(true, testLeapYear.IsLeapYear(2000));
+      Order newOrder = new Order();
+      Assert.AreEqual(typeof(Order), newOrder.GetType());
     }
   }
 }
