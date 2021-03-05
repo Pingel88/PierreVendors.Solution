@@ -81,5 +81,15 @@ namespace PierreVendors.Tests
       int result = newOrder.Id;
       Assert.AreEqual(1, result);
     }
+
+    [TestMethod]
+    public void GetId_ReturnsIdBasedOnPositionInList_Int()
+    {
+      Order newOrderA = new Order("Bread", "10 loaves of bread", 50, "03/05/2021");
+      Order newOrderB = new Order("Pastries", "20 pastries", 60, "03/05/2021");
+      int result = newOrderB.Id;
+      Assert.AreEqual(2, result);
+    }
+
   }
 }
