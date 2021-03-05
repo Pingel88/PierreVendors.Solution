@@ -7,6 +7,7 @@ namespace PierreVendors.Models
     public string Description { get; }
     public int Price { get; }
     public string Date { get; }
+    public int Id { get; }
     private static List<Order> _instances = new List <Order> {};
 
     public Order (string title, string description, int price, string date)
