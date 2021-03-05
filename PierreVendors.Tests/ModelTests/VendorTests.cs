@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using PierreVendors.Models;
 
@@ -29,6 +30,14 @@ namespace PierreVendors.Tests
       Vendor newVendor = new Vendor("Brad's Butter Emporium", description);
       string result = newVendor.Description;
       Assert.AreEqual(description, result);
+    }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_VendorList()
+    {
+      List<Vendor> newList = new List<Vendor> { };
+      List<Vendor> result = Vendor.GetAll();
+      CollectionAssert.AreEqual(newList, result);
     }
   }
 }
