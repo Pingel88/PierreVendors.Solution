@@ -29,8 +29,7 @@ namespace PierreVendors.Models
 
     public static Vendor Find(int searchId)
     {
-      Vendor fake = new Vendor("fail", "fail");
-      return fake;
+      return _instances[searchId - 1];
     }
   }
 }
