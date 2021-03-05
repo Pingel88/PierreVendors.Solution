@@ -8,6 +8,7 @@ namespace PierreVendors.Models
     public Vendor (string name, string description)
     {
       Name = name;
+      Description = description;
     }
   }
 }
