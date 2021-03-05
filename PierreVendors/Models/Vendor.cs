@@ -14,7 +14,7 @@ namespace PierreVendors.Models
       Name = name;
       Description = description;
       _instances.Add(this);
-      Id = 1;
+      Id = _instances.Count;
     }
 
     public static List<Vendor> GetAll()
