@@ -39,5 +39,15 @@ namespace PierreVendors.Tests
       List<Vendor> result = Vendor.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsVendors_VendorList()
+    {
+      Vendor newVendorA = new Vendor("Brad's Butter Emporium", "Typically buys a lot of bread to butter");
+      Vendor newVendorB = new Vendor("Sammy's Sandwiches", "Frequently purchases hoagie rolls");
+      List<Vendor> newList = new List<Vendor> { newVendorA, newVendorB };
+      List<Vendor> result = Vendor.GetAll();
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
