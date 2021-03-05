@@ -73,5 +73,13 @@ namespace PierreVendors.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void GetId_ReturnsId_Int()
+    {
+      Order newOrder = new Order("Bread", "10 loaves of bread", 50, "03/05/2021");
+      int result = newOrder.Id;
+      Assert.AreEqual(1, result);
+    }
   }
 }
