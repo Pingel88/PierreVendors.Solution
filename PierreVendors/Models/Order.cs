@@ -2,6 +2,11 @@ namespace PierreVendors.Models
 {
   public class Order
   {
-    // properties, constructors, methods, etc. go here
+    public string Title { get; set; }
+
+    public Order (string title)
+    {
+      Title = "fail";
+    }
   }
 }
