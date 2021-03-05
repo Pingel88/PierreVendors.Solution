@@ -1,17 +1,16 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ProjectName;
+using PierreVendors.Models;
 
-namespace ProjectName.Tests
+namespace PierreVendors.Tests
 {
   [TestClass]
-  public class ClassNameTests
+  public class VendorTests
   {
-    // [TestMethod]
-    // public void NameOfMethodWeAreTesting_DescriptionOfBehavior_ExpectedReturnValue()
-    // {
-    //   any necessary logic to prep for test; instantiating new classes, etc.
-    //   Assert.AreEqual(EXPECTED RESULT, CODE TO TEST);
-    //   Assert.AreEqual(true, testLeapYear.IsLeapYear(2000));
-    // }
+    [TestMethod]
+    public void VendorConstructor_CreatesInstanceOfVendor_Vendor()
+    {
+      Vendor newVendor = new Vendor();
+      Assert.AreEqual(typeof(Vendor), newVendor.GetType());
+    }
   }
 }
