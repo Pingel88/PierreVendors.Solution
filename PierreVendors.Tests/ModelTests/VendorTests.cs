@@ -90,5 +90,16 @@ namespace PierreVendors.Tests
       List<Order> result = newVendor.Orders;
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void AddOrder_AssociatesOrderWithVendor_OrderList()
+    {
+      Order newOrder = new Order("Bread", "10 loaves of bread", 50, "03/05/2021");
+      List<Order> newList = new List<Order> { newOrder };
+      Vendor newVendor = new Vendor("Brad's Butter Emporium", "Typically buys a lot of bread to butter");
+      newVendor.AddOrder(newOrder);
+      List<Order> result = newVendor.Orders;
+      CollectionAssert.AreEqual(newList, result);
+    }
   }
 }
