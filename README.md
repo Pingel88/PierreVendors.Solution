@@ -52,7 +52,7 @@ ___
 | 17 | Returns the instanced Vendor's Id property based on its position in the list of all instances of Vendor when given Vendors newVendorA and newVendorB | `newVendorB.Id` | 2 | ✅ |
 | 18 | Returns the instanced Vendor when given Vendors newVendorA and newVendorB | `Vendor.Find(2)` | newVendorB | ✅ |
 | 19 | Returns an empty list when no instances of Order are added to an instance of Vendor | `newVendor.Orders` | { } | ✅ |
-| 20 | Returns a list of instances of Order that are added to an instance of Vendor when given newOrderA and newOrderB | `newVendor.Orders` | { newOrderA, newOrderB } | ❌ |
+| 20 | Returns a list of instances of Order that are added to an instance of Vendor when given newOrderA and newOrderB | `newVendor.Orders` | { newOrderA, newOrderB } | ✅ |
 </details>
 
 
